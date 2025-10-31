@@ -1,0 +1,113 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 600px;
+  height: 80vh;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.chat-box {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #e5ddd5; /* WhatsApp chat background */
+}
+
+.message {
+  max-width: 75%;
+  padding: 10px 15px;
+  border-radius: 18px;
+  line-height: 1.4;
+  word-wrap: break-word;
+  box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
+}
+
+.user-message {
+  align-self: flex-end;
+  background-color: #dcf8c6; /* WhatsApp user message color */
+  color: #1c1e21;
+  border-bottom-right-radius: 2px;
+}
+
+.bot-message {
+  align-self: flex-start;
+  background-color: #ffffff; /* WhatsApp bot message color */
+  color: #1c1e21;
+  border-bottom-left-radius: 2px;
+}
+
+.chat-input-container {
+  display: flex;
+  padding: 15px;
+  border-top: 1px solid #eee;
+  background-color: #f0f0f0;
+}
+
+.chat-input-container input {
+  flex-grow: 1;
+  padding: 12px 18px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  margin-right: 10px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.chat-input-container input:focus {
+  border-color: #007bff;
+}
+
+.send-button {
+  background-color: #075e54; /* WhatsApp send button color */
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.send-button:hover {
+  background-color: #054a41;
+}
+
+/* Optional: Scroll to bottom of chat */
+.chat-box::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-box::-webkit-scrollbar-track {
+  background: #e5ddd5;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.chat-box::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
