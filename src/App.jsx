@@ -44,7 +44,7 @@ function App() {
         },
         {
           headers: {
-            "x-goog-api-key": "AIzaSyBzCUac0kjucX8-b8LBC7Coxg0896tv1rs",
+            "x-goog-api-key": import.meta.env.VITE_GOOGLE_API_KEY,
             "Content-Type": "application/json",
           },
         }
